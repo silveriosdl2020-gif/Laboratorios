@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\silve\\source\\repos\\Lab03-Silverio De Leon\\",
+  "WorkspaceRootPath": "C:\\Users\\silve\\OneDrive\\Documentos\\GitHub\\Laboratorios\\Lab03-Silverio De Leon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9A26C934-1E22-4D55-904F-E232B7A32B07}|Lab03-Silverio De Leon\\Lab03-Silverio De Leon.csproj|c:\\users\\silve\\source\\repos\\lab03-silverio de leon\\lab03-silverio de leon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9A26C934-1E22-4D55-904F-E232B7A32B07}|Lab03-Silverio De Leon\\Lab03-Silverio De Leon.csproj|c:\\users\\silve\\onedrive\\documentos\\github\\laboratorios\\lab03-silverio de leon\\lab03-silverio de leon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A26C934-1E22-4D55-904F-E232B7A32B07}|Lab03-Silverio De Leon\\Lab03-Silverio De Leon.csproj|solutionrelative:lab03-silverio de leon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\silve\\source\\repos\\Lab03-Silverio De Leon\\Lab03-Silverio De Leon\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\silve\\OneDrive\\Documentos\\GitHub\\Laboratorios\\Lab03-Silverio De Leon\\Lab03-Silverio De Leon\\Program.cs",
               "RelativeDocumentMoniker": "Lab03-Silverio De Leon\\Program.cs",
-              "ToolTip": "C:\\Users\\silve\\source\\repos\\Lab03-Silverio De Leon\\Lab03-Silverio De Leon\\Program.cs",
+              "ToolTip": "C:\\Users\\silve\\OneDrive\\Documentos\\GitHub\\Laboratorios\\Lab03-Silverio De Leon\\Lab03-Silverio De Leon\\Program.cs",
               "RelativeToolTip": "Lab03-Silverio De Leon\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-04T23:52:56.048Z",
               "EditorCaption": ""

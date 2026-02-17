@@ -1,0 +1,7 @@
+C:\Users\silve\OneDrive\Documentos\GitHub\Laboratorios\Lab04 - Silverio De Leon\Lab04 - Silverio De Leon\bin\Debug\Lab04 - Silverio De Leon.exe.config
+C:\Users\silve\OneDrive\Documentos\GitHub\Laboratorios\Lab04 - Silverio De Leon\Lab04 - Silverio De Leon\bin\Debug\Lab04 - Silverio De Leon.exe
+C:\Users\silve\OneDrive\Documentos\GitHub\Laboratorios\Lab04 - Silverio De Leon\Lab04 - Silverio De Leon\bin\Debug\Lab04 - Silverio De Leon.pdb
+C:\Users\silve\OneDrive\Documentos\GitHub\Laboratorios\Lab04 - Silverio De Leon\Lab04 - Silverio De Leon\obj\Debug\Lab04 - Silverio De Leon.csproj.AssemblyReference.cache
+C:\Users\silve\OneDrive\Documentos\GitHub\Laboratorios\Lab04 - Silverio De Leon\Lab04 - Silverio De Leon\obj\Debug\Lab04 - Silverio De Leon.csproj.CoreCompileInputs.cache
+C:\Users\silve\OneDrive\Documentos\GitHub\Laboratorios\Lab04 - Silverio De Leon\Lab04 - Silverio De Leon\obj\Debug\Lab04 - Silverio De Leon.exe
+C:\Users\silve\OneDrive\Documentos\GitHub\Laboratorios\Lab04 - Silverio De Leon\Lab04 - Silverio De Leon\obj\Debug\Lab04 - Silverio De Leon.pdb
