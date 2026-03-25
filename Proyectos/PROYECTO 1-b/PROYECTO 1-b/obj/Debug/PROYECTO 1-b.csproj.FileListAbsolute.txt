@@ -1,0 +1,7 @@
+C:\Users\silve\OneDrive\Documentos\GitHub\Proyectos\PROYECTO 1-b\PROYECTO 1-b\bin\Debug\PROYECTO 1-b.exe.config
+C:\Users\silve\OneDrive\Documentos\GitHub\Proyectos\PROYECTO 1-b\PROYECTO 1-b\bin\Debug\PROYECTO 1-b.exe
+C:\Users\silve\OneDrive\Documentos\GitHub\Proyectos\PROYECTO 1-b\PROYECTO 1-b\bin\Debug\PROYECTO 1-b.pdb
+C:\Users\silve\OneDrive\Documentos\GitHub\Proyectos\PROYECTO 1-b\PROYECTO 1-b\obj\Debug\PROYECTO 1-b.csproj.AssemblyReference.cache
+C:\Users\silve\OneDrive\Documentos\GitHub\Proyectos\PROYECTO 1-b\PROYECTO 1-b\obj\Debug\PROYECTO 1-b.csproj.CoreCompileInputs.cache
+C:\Users\silve\OneDrive\Documentos\GitHub\Proyectos\PROYECTO 1-b\PROYECTO 1-b\obj\Debug\PROYECTO 1-b.exe
+C:\Users\silve\OneDrive\Documentos\GitHub\Proyectos\PROYECTO 1-b\PROYECTO 1-b\obj\Debug\PROYECTO 1-b.pdb
