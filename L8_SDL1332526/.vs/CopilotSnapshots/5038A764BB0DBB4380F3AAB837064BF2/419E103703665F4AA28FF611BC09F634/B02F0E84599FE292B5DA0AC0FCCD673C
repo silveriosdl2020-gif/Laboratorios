@@ -1,0 +1,112 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace L8_SDL1332526
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("¿Cómo te llamas? ");
+            string nombre = Console.ReadLine();
+            Console.WriteLine("Hola, " + nombre + " ¡Bienvenido a C#!");
+            Console.WriteLine();
+            Console.WriteLine("Presiona cualquier tecla para pasar a \"Ejercicio 1\"");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("\"Ejercicio 1\"");
+            Console.ReadKey();
+            double sumaNotas = 0;
+            int aprobados = 0;
+            int reprobados = 0;
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine("Ingrese la nota del estudiante " + i + ":");
+                double nota = double.Parse(Console.ReadLine());
+                sumaNotas = sumaNotas + nota;
+                if (nota >= 61)
+                {
+                    aprobados = aprobados + 1;
+                }
+                else
+                {
+                    reprobados = reprobados + 1;
+                }
+            }
+            double promedio = sumaNotas / 10;
+            Console.WriteLine("Promedio de la clase: " + promedio);
+            Console.WriteLine("Cantidad de aprobados: " + aprobados);
+            Console.WriteLine("Cantidad de reprobados: " + reprobados);
+            Console.WriteLine();
+            Console.WriteLine("Presiona cualquier tecla para pasar a \"Ejercicio 2\"");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("\"Ejercicio 2\"");
+            Console.ReadKey();
+            Console.WriteLine("Ingrese un número entero positivo:");
+            int limite = int.Parse(Console.ReadLine());
+            int sumaTotal = 0;
+            int cantidadPares = 0;
+            int cantidadImpares = 0;
+            for (int i = 1; i <= limite; i++)
+            {
+                sumaTotal = sumaTotal + i;
+                if (i % 2 == 0)
+                {
+                    cantidadPares = cantidadPares + 1;
+                }
+                else
+                {
+                    cantidadImpares = cantidadImpares + 1;
+                }
+            }
+            Console.WriteLine("La suma de todos los números es: " + sumaTotal);
+            Console.WriteLine("Cantidad de números pares: " + cantidadPares);
+            Console.WriteLine("Cantidad de números impares: " + cantidadImpares);
+            Console.WriteLine();
+            Console.WriteLine("Presiona cualquier tecla para pasar a \"Ejercicio 3\"");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("\"Ejercicio 3\"");
+            Console.ReadKey();
+            double totalVentas = 0;
+            int clientesAtendidos = 0;
+            int opcion = 0;
+            do
+            {
+                Console.WriteLine("1: Registrar compra");
+                Console.WriteLine("2: Mostrar total de ventas");
+                Console.WriteLine("3: Mostrar cantidad de clientes atendidos");
+                Console.WriteLine("4: Salir");
+                Console.Write("Seleccione una opción: ");
+                opcion = int.Parse(Console.ReadLine()); switch (opcion)
+                {
+                    case 1:
+                        Console.WriteLine("Ingrese el monto de la compra:");
+                        double monto = double.Parse(Console.ReadLine());
+                        totalVentas = totalVentas + monto;
+                        clientesAtendidos = clientesAtendidos + 1;
+                        Console.WriteLine("Compra registrada");
+                        break;
+
+                    case 2:
+                        Console.WriteLine("El total acumulado de ventas del día es: " + totalVentas);
+                        break;
+
+                    case 3:
+                        Console.WriteLine("Cantidad de clientes atendidos: " + clientesAtendidos);
+                        break;
+
+                    case 4:
+                        Console.WriteLine("Saliendo del programa");
+                        break;
+
+                    default:
+                        Console.WriteLine("Opción no válida");
+                        break;
+                }
+            } while (opcion != 4);
+        }
