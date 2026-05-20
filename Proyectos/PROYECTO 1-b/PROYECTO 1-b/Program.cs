@@ -15,7 +15,6 @@ namespace PROYECTO_1_b
             int tiempoSimuladoTotal = 0, opcionMenu = 0, totalTicketsCreados = 0, totalTicketsCerrados = 0;
             double dineroRecaudado = 0.0, montoCobroActual = 0.0, tarifaAplicada = 0.0;
             bool existeTicketActivo = false;
-            Console.Clear();
             Console.WriteLine(" - CONFIGURACION DE SISTEMA - ");
             Console.Write("Nombre del Operador: ");
             nombreOperador = Console.ReadLine();
@@ -74,8 +73,10 @@ namespace PROYECTO_1_b
                         }
                         else
                         {
-                            Console.Write("Placa: "); placaVehiculo = Console.ReadLine();
-                            Console.Write("Cliente: "); nombreCliente = Console.ReadLine();
+                            Console.Write("Placa: "); 
+                            placaVehiculo = Console.ReadLine();
+                            Console.Write("Cliente: "); 
+                            nombreCliente = Console.ReadLine();
                             Console.Write("Tipo (1.Moto / 2.Carro / 3.Camión): ");
                             int.TryParse(Console.ReadLine(), out tipoVehiculo);
                             Console.Write("¿VIP? (1.Sí / 2.No): ");

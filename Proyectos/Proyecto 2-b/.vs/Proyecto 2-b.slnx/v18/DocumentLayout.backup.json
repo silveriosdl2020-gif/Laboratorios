@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\silve\\OneDrive\\Documentos\\GitHub\\Laboratorios\\Proyectos\\Proyecto 2-b\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB1F5DFD-8629-47A7-926C-0E95A40A094C}|Proyecto 2-b\\Proyecto 2-b.csproj|c:\\users\\silve\\onedrive\\documentos\\github\\laboratorios\\proyectos\\proyecto 2-b\\proyecto 2-b\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB1F5DFD-8629-47A7-926C-0E95A40A094C}|Proyecto 2-b\\Proyecto 2-b.csproj|solutionrelative:proyecto 2-b\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\silve\\OneDrive\\Documentos\\GitHub\\Laboratorios\\Proyectos\\Proyecto 2-b\\Proyecto 2-b\\Program.cs",
+              "RelativeDocumentMoniker": "Proyecto 2-b\\Program.cs",
+              "ToolTip": "C:\\Users\\silve\\OneDrive\\Documentos\\GitHub\\Laboratorios\\Proyectos\\Proyecto 2-b\\Proyecto 2-b\\Program.cs*",
+              "RelativeToolTip": "Proyecto 2-b\\Program.cs*",
+              "ViewState": "AgIAAAABAAAAAAAAAAAUwAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T03:46:33.958Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

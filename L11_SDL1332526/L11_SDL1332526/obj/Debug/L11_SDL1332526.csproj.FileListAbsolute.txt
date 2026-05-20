@@ -1,0 +1,7 @@
+C:\Users\silve\OneDrive\Documentos\GitHub\Laboratorios\L11_SDL1332526\L11_SDL1332526\bin\Debug\L11_SDL1332526.exe.config
+C:\Users\silve\OneDrive\Documentos\GitHub\Laboratorios\L11_SDL1332526\L11_SDL1332526\bin\Debug\L11_SDL1332526.exe
+C:\Users\silve\OneDrive\Documentos\GitHub\Laboratorios\L11_SDL1332526\L11_SDL1332526\bin\Debug\L11_SDL1332526.pdb
+C:\Users\silve\OneDrive\Documentos\GitHub\Laboratorios\L11_SDL1332526\L11_SDL1332526\obj\Debug\L11_SDL1332526.csproj.AssemblyReference.cache
+C:\Users\silve\OneDrive\Documentos\GitHub\Laboratorios\L11_SDL1332526\L11_SDL1332526\obj\Debug\L11_SDL1332526.csproj.CoreCompileInputs.cache
+C:\Users\silve\OneDrive\Documentos\GitHub\Laboratorios\L11_SDL1332526\L11_SDL1332526\obj\Debug\L11_SDL1332526.exe
+C:\Users\silve\OneDrive\Documentos\GitHub\Laboratorios\L11_SDL1332526\L11_SDL1332526\obj\Debug\L11_SDL1332526.pdb

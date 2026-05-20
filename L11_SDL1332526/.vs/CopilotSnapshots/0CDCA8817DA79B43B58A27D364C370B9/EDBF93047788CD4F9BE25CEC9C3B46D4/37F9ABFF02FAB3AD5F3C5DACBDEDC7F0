@@ -1,0 +1,156 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace L11_SDL1332526
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Ingrese su nombre: ");
+            string nombre = Console.ReadLine();
+            Console.WriteLine("Bienvenido(a), " + nombre);
+            Console.WriteLine();
+            Console.WriteLine("Presiona cualquier tecla para pasar al siguiente ejercicio");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("Ejercicio 1");
+            Console.WriteLine();
+            Console.Write("Ingrese su contraseña: ");
+            string password = Console.ReadLine();
+            List<string> errores = new List<string>();
+            if (password.Length < 8)
+                errores.Add("tener al menos 8 caracteres");
+            bool tieneMayuscula = false;
+            bool tieneNumero = false;
+            bool tieneEspecial = false;
+            string especiales = "@#$%"; 
+            foreach (char c in password)
+            {
+                if (char.IsUpper(c)) tieneMayuscula = true;
+                if (char.IsDigit(c)) tieneNumero = true;
+                if (especiales.Contains(c)) tieneEspecial = true;
+            }
+            if (!tieneMayuscula) errores.Add("falta mayúscula");
+            if (!tieneNumero) errores.Add("falta número");
+            if (!tieneEspecial) errores.Add("falta carácter especial");
+            if (errores.Count == 0)
+            {
+                Console.WriteLine("Contraseña válida");
+            }
+            else
+            {
+                Console.WriteLine("Inválida: " + string.Join(", ", errores));
+            }
+            Console.WriteLine();
+            Console.WriteLine("Presiona cualquier tecla para pasar al siguiente ejercicio");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("Ejercicio 2");
+            Console.WriteLine();
+            Console.Write("Ingrese una cadena: ");
+            string original = Console.ReadLine();
+            string invertida = "";
+            for (int i = original.Length - 1; i >= 0; i--)
+            {
+                invertida += original[i];
+            }
+            Console.WriteLine("Resultado: " + invertida);
+            Console.WriteLine();
+            Console.WriteLine("Presiona cualquier tecla para pasar al siguiente ejercicio");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("Ejercicio 3");
+            Console.WriteLine();
+            Console.Write("¿Cuántos números desea ingresar?: ");
+            int cantidad = int.Parse(Console.ReadLine());
+            double[] numeros = new double[cantidad];
+            double suma = 0;
+            for (int i = 0; i < cantidad; i++)
+            {
+                Console.Write($"Ingrese el número {i + 1}: ");
+                numeros[i] = double.Parse(Console.ReadLine());
+                suma += numeros[i];
+            }
+            double mayor = numeros[0];
+            double menor = numeros[0];
+            foreach (double n in numeros)
+            {
+                if (n > mayor) mayor = n;
+                if (n < menor) menor = n;
+            }
+            double promedio = suma / cantidad;
+            Console.WriteLine("\n--- Resultados ---");
+            Console.WriteLine($"Suma = {suma}");
+            Console.WriteLine($"Promedio = {promedio}");
+            Console.WriteLine($"Mayor = {mayor}");
+            Console.WriteLine($"Menor = {menor}");
+            Console.WriteLine();
+            Console.WriteLine("Presiona cualquier tecla para pasar al siguiente ejercicio");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("Ejercicio 4");
+            Console.WriteLine();
+            int[] arreglo = new int[8];
+            Console.WriteLine("Ingrese 8 números enteros:");
+            for (int i = 0; i < 8; i++)
+            {
+                Console.Write($"Posición {i}: ");
+                arreglo[i] = int.Parse(Console.ReadLine());
+            }
+            Console.Write("Ingrese el número a buscar: ");
+            int buscar = int.Parse(Console.ReadLine());
+            bool encontrado = false;
+            int posicion = -1;
+            for (int i = 0; i < arreglo.Length; i++)
+            {
+                if (arreglo[i] == buscar)
+                {
+                    encontrado = true;
+                    posicion = i;
+                    break;
+                }
+            }
+            if (encontrado)
+            {
+                Console.WriteLine($"El número sí existe en la posición {posicion}");
+            }
+            else
+            {
+                Console.WriteLine("El número no existe en el arreglo");
+            }
+            Console.WriteLine();
+            Console.WriteLine("Presiona cualquier tecla para pasar al siguiente ejercicio");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("Ejercicio 5");
+            Console.WriteLine();
+            string[] nombres = new string[5];
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write($"Ingrese el nombre {i + 1}: ");
+                nombres[i] = Console.ReadLine();
+            }
+            int contadorMasDe5 = 0;
+            string nombreMasLargo = nombres[0];
+            foreach (string n in nombres)
+            {
+                if (n.Length > 5)
+                {
+                    contadorMasDe5++;
+                }
+                if (n.Length > nombreMasLargo.Length)
+                {
+                    nombreMasLargo = n;
+                }
+            }
+            Console.WriteLine("- Resultados -");
+            Console.WriteLine("Nombres ingresados: " + string.Join(", ", nombres));
+            Console.WriteLine($"Más de 5 letras: {contadorMasDe5}");
+            Console.WriteLine($"Nombre más largo: {nombreMasLargo}");
+        }
+    }
+}

@@ -1,0 +1,198 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace L11_SDL1332526
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Ingrese su nombre: ");
+            string nombre = Console.ReadLine();
+            Console.WriteLine("Bienvenido(a), " + nombre);
+            Console.WriteLine();
+            Console.WriteLine("Presiona cualquier tecla para pasar al siguiente ejercicio");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("Ejercicio 1");
+            Console.WriteLine();
+            Console.Write("Ingrese su contraseña: ");
+            string password = Console.ReadLine();
+            string errores = "";
+            bool tieneMayuscula = false;
+            bool tieneNumero = false;
+            bool tieneEspecial = false;
+            string especiales = "@#$%";
+            if (password.Length < 8)
+            {
+                errores = errores + "tener al menos 8 caracteres, ";
+            }
+            for (int i = 0; i < password.Length; i++)
+            {
+                char letraActual = password[i];
+
+                if (char.IsUpper(letraActual))
+                {
+                    tieneMayuscula = true;
+                }
+                if (char.IsDigit(letraActual))
+                {
+                    tieneNumero = true;
+                }
+                for (int j = 0; j < especiales.Length; j++)
+                {
+                    if (letraActual == especiales[j])
+                    {
+                        tieneEspecial = true;
+                    }
+                }
+            }
+            if (tieneMayuscula == false)
+            {
+                errores = errores + "falta mayúscula, ";
+            }
+            if (tieneNumero == false)
+            {
+                errores = errores + "falta número, ";
+            }
+            if (tieneEspecial == false)
+            {
+                errores = errores + "falta carácter especial, ";
+            }
+
+            if (errores == "")
+            {
+                Console.WriteLine("Contraseña válida");
+            }
+            else
+            {
+                Console.WriteLine("Inválida: " + errores);
+            }
+            Console.WriteLine();
+            Console.WriteLine("Presiona cualquier tecla para pasar al siguiente ejercicio");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("Ejercicio 2");
+            Console.WriteLine();
+            Console.Write("Ingrese una cadena: ");
+            string original = Console.ReadLine();
+            string invertida = "";
+            for (int i = original.Length - 1; i >= 0; i--)
+            {
+                invertida = invertida + original[i];
+            }
+            Console.WriteLine("Resultado: " + invertida);
+
+            Console.WriteLine();
+            Console.WriteLine("Presiona cualquier tecla para pasar al siguiente ejercicio");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("Ejercicio 3");
+            Console.WriteLine();
+            Console.Write("¿Cuántos números desea ingresar?: ");
+            int cantidad = int.Parse(Console.ReadLine());
+            double[] numeros = new double[cantidad];
+            double suma = 0;
+            for (int i = 0; i < cantidad; i++)
+            {
+                Console.Write("Ingrese el número " + (i + 1) + ": ");
+                numeros[i] = double.Parse(Console.ReadLine());
+                suma = suma + numeros[i];
+            }
+            double mayor = numeros[0];
+            double menor = numeros[0];
+            for (int i = 0; i < numeros.Length; i++)
+            {
+                if (numeros[i] > mayor)
+                {
+                    mayor = numeros[i];
+                }
+                if (numeros[i] < menor)
+                {
+                    menor = numeros[i];
+                }
+            }
+            double promedio = suma / cantidad;
+            Console.WriteLine("");
+            Console.WriteLine("--- Resultados ---");
+            Console.WriteLine("Suma = " + suma);
+            Console.WriteLine("Promedio = " + promedio);
+            Console.WriteLine("Mayor = " + mayor);
+            Console.WriteLine("Menor = " + menor);
+            Console.WriteLine();
+            Console.WriteLine("Presiona cualquier tecla para pasar al siguiente ejercicio");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("Ejercicio 4");
+            Console.WriteLine();
+            int[] arreglo = new int[8];
+            Console.WriteLine("Ingrese 8 números enteros:");
+            for (int i = 0; i < 8; i++)
+            {
+                Console.Write("Posición " + i + ": ");
+                arreglo[i] = int.Parse(Console.ReadLine());
+            }
+            Console.Write("Ingrese el número a buscar: ");
+            int buscar = int.Parse(Console.ReadLine());
+            bool encontrado = false;
+            int posicion = -1;
+            for (int i = 0; i < arreglo.Length; i++)
+            {
+                if (arreglo[i] == buscar)
+                {
+                    encontrado = true;
+                    posicion = i;
+                    break;
+                }
+            }
+            if (encontrado == true)
+            {
+                Console.WriteLine("El número sí existe en la posición " + posicion);
+            }
+            else
+            {
+                Console.WriteLine("El número no existe en el arreglo");
+            }
+            Console.WriteLine();
+            Console.WriteLine("Presiona cualquier tecla para pasar al siguiente ejercicio");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("Ejercicio 5");
+            Console.WriteLine();
+            string[] nombres = new string[5];
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write("Ingrese el nombre " + (i + 1) + ": ");
+                nombres[i] = Console.ReadLine();
+            }
+            int contadorMasDe5 = 0;
+            string nombreMasLargo = nombres[0];
+            for (int i = 0; i < nombres.Length; i++)
+            {
+                if (nombres[i].Length > 5)
+                {
+                    contadorMasDe5 = contadorMasDe5 + 1;
+                }
+                if (nombres[i].Length > nombreMasLargo.Length)
+                {
+                    nombreMasLargo = nombres[i];
+                }
+            }
+            Console.WriteLine("- Resultados -");
+            Console.Write("Nombres ingresados: ");
+            for (int i = 0; i < nombres.Length; i++)
+            {
+                Console.Write(nombres[i] + " ");
+            }
+            Console.WriteLine("");
+            Console.WriteLine("Más de 5 letras: " + contadorMasDe5);
+            Console.WriteLine("Nombre más largo: " + nombreMasLargo);
+            Console.WriteLine("");
+            Console.WriteLine("Fin del programa. Presione una tecla para salir.");
+            Console.ReadKey();
+        }
+    }
+}
